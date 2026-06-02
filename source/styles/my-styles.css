@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab&display=swap');
+
+body {
+    background: linear-gradient(90deg, #5560ff 0%, #020078 100%);
+    font-family: Roboto Slab, serif;
+}
+
+
+/* NAVIGATION */
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(140, 139, 139);
+}
+
+.nav-item .nav-link.active {
+    color: white;
+}
+
+.nav-link {
+    color: rgb(140, 139, 139);
+}
+
+/* ITEM CARDS */
+.card {
+    background-color: #4c56e4;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+}
+
+.card .btn-primary {
+    background-color: #302e9a;
+    color: rgb(85, 192, 156);
+    
+}
+
+
+/* RIGHT BAR */
+.info-section div {
+    background: linear-gradient(90deg, #242ebe 0%, #020078 100%);
+}
+
+.info-section p {
+    color: rgb(214, 214, 214);
+}
+
+.info-section a {
+    text-decoration: none;
+    color: rgb(85, 192, 156);
+}
+
+
+/* CAROUSEL */
+.carousel-item .description, 
+.footer-text {
+    color: rgb(214, 214, 214);
+    margin: auto auto;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(90deg, #606af6 0%, #07058d 100%);
+}
+
+.footer-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* LOVER-SECTION */
+.lover-section p{
+    color: rgb(214, 214, 214);
+    font-size: 20px;
+}
+
+/* .yes-no-btn */
+.btn-outline-success{
+    background-color: rgb(122, 248, 122);
+}
+
+.btn-outline-danger {
+    background-color: rgb(255, 135, 135);
+}
+
+
+.call {
+    animation: call 2s linear 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
